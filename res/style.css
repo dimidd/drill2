@@ -85,6 +85,7 @@
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-ms-user-select: none;
+	direction: rtl;
 }
 
 .answer label {
@@ -108,8 +109,13 @@
 
 .answer .content {
 	display: block;
+	direction: rtl;
+	margin-right: 1.5em;
 }
 
+.question-header {
+	direction: rtl;
+}
 
 /* Answer coloring */
 

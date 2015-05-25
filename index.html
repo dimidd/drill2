@@ -328,7 +328,7 @@ B) A mouse</pre>
 						<h2 title="{{currentQuestion.id != false ? currentQuestion.id : 'No ID'}}">Question {{questionIndex}} out of {{questions.length}}</h2>
 					</div>
 					<form ng-submit="nextQuestion()" ng-class="{ graded: view.isGraded() }">
-						<div>
+						<div class="question-header">
 							<div ng-bind-html="currentQuestion.body | markdown:this" ng-show="config.markdown"></div>
 							<div ng-hide="config.markdown">
 								<p ng-repeat="line in currentQuestion.body | lines track by $index">{{line}}</p>
